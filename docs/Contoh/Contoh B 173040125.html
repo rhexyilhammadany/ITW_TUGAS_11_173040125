@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+   <h1>pilih link</h1>
+   <form>
+   	<select name="mylink" id="mylink" onchange=pilihlink()>
+   		<option value="">pilihlink</option>
+   		<option value="http://google.com">Google.com</option>
+   		<option value="http://teknik.unpas.ac.id">website teknik unpas</option>
+   	</select>
+   </form>
+
+   <script>
+   	function pilihlink(){
+   		var linkterpilih = document.getElementById('mylink').value;
+
+   		if (linkterpilih==""){
+		alert("pilih link");
+	}else{
+   		document.location.href = linkterpilih;
+	}
+}
+   		
+   	
+   </script>
+   <center><a href="../../index.html" class="button noz">Index</a></center>
+</body>
+</html>
